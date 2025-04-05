@@ -469,6 +469,82 @@ h6 {
     visibility: visible;
   }
 }
+/*--------------------------------------------------------------
+# General Styles
+--------------------------------------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/*--------------------------------------------------------------
+# Sidebar Toggle Button (Inside Navbar)
+--------------------------------------------------------------*/
+#sidebarToggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 6px 10px;
+}
+
+#sidebarToggle:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Sidebar (Floating Panel Style)
+--------------------------------------------------------------*/
+.sidebar {
+  position: absolute;
+  top: 100%; /* Just below the navbar */
+  left: 10px; /* Aligned with toggle button, adjust as needed */
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  display: none; /* Hidden by default */
+  z-index: 1050;
+}
+
+/* Show sidebar when toggled */
+.sidebar.open {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Sidebar List Items
+--------------------------------------------------------------*/
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar ul li:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
