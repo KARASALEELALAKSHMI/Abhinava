@@ -4,6 +4,12 @@
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -333,15 +339,6 @@ h6 {
   visibility: hidden;
   overflow: hidden;
 }
-/*--------------------------------------------------------------
-# General Styles
---------------------------------------------------------------*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -478,7 +475,6 @@ body {
     visibility: visible;
   }
 }
-
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
@@ -1617,36 +1613,6 @@ section,
 .doctors .team-member .social a+a {
   margin-left: 8px;
 }
-
-.clients-section {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.clients-section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  font-weight: 700;
-}
-
-.clients-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  align-items: center;
-}
-
-.clients-logos img {
-  max-width: 100px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.clients-logos img:hover {
-  transform: scale(1.1);
-}
-
 
 /*--------------------------------------------------------------
 # Faq Section
